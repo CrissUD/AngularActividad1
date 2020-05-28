@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularIntroduccion';
+  name: String = "Hello Word";
+  bandera: boolean = false;
+  estudiates = [
+    {
+      nombre: "carlos"
+    },
+    {
+      nombre: "juan"
+    },
+    {
+      nombre: "luis"
+    },
+  ]
+
+  public showName(name: String){
+    console.log(name);
+  }
 }

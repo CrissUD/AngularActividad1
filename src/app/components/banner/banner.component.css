@@ -1,0 +1,21 @@
+.banner{
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.0));
+    color: #ddd;
+}
+
+.cover div{
+    margin: 40px;
+}

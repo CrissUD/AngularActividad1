@@ -1,0 +1,22 @@
+<app-banner></app-banner>
+<div class="container">
+    <h2>List Of Heroes</h2>
+    <button class="btn btn-danger" (click)="bandera = !bandera"> Show / Hidden</button>
+    
+    <div *ngIf="bandera">
+        <div class="row row-cols-1 row-cols-md-3" >
+            <div class="col mb-4" *ngFor="let heroe of heroes; let i= index">
+                <div *ngIf="heroe.nombre!=='Batman'">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img [src]="heroe.imagen" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{i}} {{heroe.nombre}}</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">More information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

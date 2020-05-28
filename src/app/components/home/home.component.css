@@ -1,0 +1,13 @@
+h2{
+    text-align: center;
+    margin: 20px;
+    color: #343A40;
+}
+
+.btn{
+    margin: 40px;
+}
+
+.card{
+    min-height: 480px;
+}
