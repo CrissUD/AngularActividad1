@@ -1,3 +1,9 @@
+.content{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+}
+
 h2{
     text-align: center;
     margin: 20px;
@@ -6,8 +12,5 @@ h2{
 
 .btn{
     margin: 40px;
-}
-
-.card{
-    min-height: 480px;
+    justify-self: center;
 }

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row no-gutters">
+        <div class="col-md-10">
+            <h1 class="card-title">{{hero.nombre}}</h1>
+            <figure><img [src]="hero.img" class="card-img" alt="img-heroes"></figure>
+            <div class="card-body">
+                <strong>Biografiá:</strong>
+                <p class="card-text">{{hero.bio}}.</p>
+                <strong>Aparición:</strong>
+                <p class="card-text">{{hero.aparicion}}.</p>
+                <strong>Franquicia:</strong>
+                <figure *ngIf="hero.casa =='Marvel'">
+                    <img class="home" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png" alt="">
+                </figure>
+                <figure *ngIf="hero.casa =='DC'">
+                    <img class="home" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/DC_Comics_logo.png/600px-DC_Comics_logo.png" alt="">
+                </figure>
+                <a class="btn btn-danger" routerLink="/home">Regresar</a>
+            </div>
+        </div>
+    </div>
+</div>
